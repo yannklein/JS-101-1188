@@ -1,19 +1,19 @@
 // ARRAY CRUD
-const students = ['Ryan', 'Kim', 'Sarah'];
+const students = ['Curtis', 'Kiyoe', 'Joe'];
 
 // Create
-students.push("Isabel")
+students.push("Buruburu")
 console.log(students);
 
 // Read
-console.log(students[3])
+console.log(students[1]);
 
 // Update
-students[3] = "Super Isabel"
+students[1] = "Super Kiyoe"
 console.log(students);
 
 // Delete
-students.splice(3, 1) // remove 1 element from index 3
+students.splice(1, 1); // deletes from index 1, 1 element
 console.log(students);
 
 // Iterate
@@ -21,3 +21,9 @@ console.log(students);
 students.forEach((student) => {
   console.log(`${student} is amazing!`);
 });
+
+const newArray = students.map((student) => {
+  return `${student} is amazing!`;
+});
+
+console.log(newArray);

@@ -3,14 +3,13 @@ const student = {
   lastName: "Paillard"
 };
 
-console.log(student["firstName"]);
+console.log(student['firstName']);
 console.log(student.firstName);
 
 student.firstName = "Super Boris";
-
 console.log(student);
 
-const myKey = "firstName";
-
-console.log(student.myKey); // does not work!
+// Side note
+const myKey = 'firstName';
+// console.log(student.myKey); // GIVES UNDEFINED!!
 console.log(student[myKey]);
